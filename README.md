@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://doi.org/10.5281/zenodo.18674795"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18674795.svg" alt="DOI"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Code-MIT-blue.svg" alt="License: MIT"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Dataset-CC%20BY--SA%204.0-lightgrey.svg" alt="License: CC BY-SA 4.0"></a>
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.10%2B-blue.svg" alt="Python 3.10+"></a>
@@ -118,6 +119,7 @@ See [LICENSE](LICENSE) for full terms.
 
 - **HalalLens App**: [https://halallens.no](https://halallens.no)
 - **Paper**: [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+- **Dataset (Zenodo)**: [doi:10.5281/zenodo.18674795](https://doi.org/10.5281/zenodo.18674795)
 - **Dataset Download**: See [`data/README.md`](data/README.md)
 
 ---
