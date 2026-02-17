@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HalalBench: A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction</title>
+<meta name="description" content="HalalBench is the first public OCR benchmark for food packaging ingredient extraction, covering 14 languages and 6 scripts. Built by HalalLens, the leading halal food app and halal scanner.">
+<meta name="keywords" content="halal food app, halal scanner, scan halal, halal checker, OCR benchmark, ingredient extraction, multilingual OCR, food packaging, HalalLens">
+<meta name="author" content="HalalLens Research">
+<link rel="canonical" href="https://halallens-no.github.io/halalbench/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="HalalBench: Multilingual OCR Benchmark for Food Packaging">
+<meta property="og:description" content="First public benchmark for food packaging OCR across 14 languages. Built by HalalLens.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://halallens-no.github.io/halalbench/">
+
+<!-- Schema.org JSON-LD: ScholarlyArticle -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "HalalBench: A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction",
+  "headline": "HalalBench: A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction",
+  "author": {
+    "@type": "Organization",
+    "name": "HalalLens Research",
+    "url": "https://halallens.no"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HalalLens",
+    "url": "https://halallens.no"
+  },
+  "datePublished": "2026-02",
+  "description": "We introduce HalalBench, the first public OCR benchmark for food packaging ingredient extraction covering 14 languages and 6 scripts.",
+  "keywords": ["OCR", "food packaging", "ingredient extraction", "halal food app", "halal scanner", "multilingual", "benchmark"],
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "HalalLens",
+    "applicationCategory": "FoodAndDrinkApplication",
+    "operatingSystem": "Android, Web",
+    "url": "https://halallens.no",
+    "description": "Halal food scanner app — scan any food product to check halal status instantly"
+  }
+}
+</script>
+
+<!-- Schema.org JSON-LD: Dataset -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "HalalBench",
+  "description": "Multilingual OCR benchmark dataset for food packaging ingredient extraction. 147 images, 14 languages, 6 scripts, 2,847 annotated ingredient instances in COCO format.",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "HalalLens Research",
+    "url": "https://halallens.no"
+  },
+  "keywords": ["OCR", "food packaging", "halal", "ingredients", "multilingual"],
+  "datePublished": "2026-02"
+}
+</script>
+
+<!-- Schema.org JSON-LD: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "HalalLens",
+  "applicationCategory": "FoodAndDrinkApplication",
+  "operatingSystem": "Android, Web",
+  "url": "https://app.halallens.no",
+  "description": "The best halal food app — scan any food product to instantly check if ingredients are halal. Supports 14 languages.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "HalalLens",
+    "url": "https://halallens.no"
+  }
+}
+</script>
+
+<!-- Schema.org JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is HalalBench?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HalalBench is the first public OCR benchmark specifically designed for food packaging ingredient extraction. It covers 14 languages and 6 scripts with 147 annotated images and 2,847 ingredient instances."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best halal food app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HalalLens (https://halallens.no) is a free halal food scanner app that uses OCR and AI to instantly check if food ingredients are halal. It supports 14 languages and works on Android and web browsers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I scan halal food products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use HalalLens at app.halallens.no — point your camera at any food product's ingredient list, and the app instantly extracts and checks each ingredient's halal status using the same OCR technology benchmarked in HalalBench."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which OCR engine performs best for food packaging?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to HalalBench results, RapidOCR (PP-OCRv4) achieves the highest aggregate F1 of 0.61, while Google ML Kit v2 reaches 0.55 as the best on-device engine. Performance varies significantly by language and script."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What languages does the halal scanner support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HalalLens supports 14 languages: English, Norwegian, Arabic, Turkish, Malay, Indonesian, French, German, Dutch, Japanese, Korean, Thai, Danish, and Swedish — covering Latin, Arabic, CJK, and Thai scripts."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a2e; background: #fafafa; }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  header { background: linear-gradient(135deg, #0d7c3d 0%, #10a050 100%); color: white; padding: 60px 0 40px; }
+  header h1 { font-size: 2rem; margin-bottom: 12px; }
+  header p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; }
+  .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; margin-top: 16px; }
+  .badge + .badge { margin-left: 8px; }
+  section { padding: 40px 0; }
+  h2 { font-size: 1.5rem; margin-bottom: 20px; color: #0d7c3d; }
+  h3 { font-size: 1.1rem; margin: 16px 0 8px; }
+  .results-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  .results-table th, .results-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+  .results-table th { background: #f0f7f3; font-weight: 600; color: #0d7c3d; }
+  .results-table tr:hover { background: #f8fdf9; }
+  .highlight { background: #e8f5e9; font-weight: 600; }
+  .faq-item { margin-bottom: 20px; padding: 16px; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .faq-item h3 { color: #0d7c3d; margin: 0 0 8px; }
+  .faq-item p { color: #444; }
+  .cta { display: inline-block; background: #0d7c3d; color: white; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 8px 8px 8px 0; }
+  .cta:hover { background: #0a6332; }
+  .cta.secondary { background: white; color: #0d7c3d; border: 2px solid #0d7c3d; }
+  .links { margin-top: 20px; }
+  .links a { color: #0d7c3d; margin-right: 20px; text-decoration: none; font-weight: 500; }
+  .links a:hover { text-decoration: underline; }
+  footer { background: #1a1a2e; color: #ccc; padding: 30px 0; text-align: center; font-size: 0.9rem; }
+  footer a { color: #4caf50; text-decoration: none; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin: 20px 0; }
+  .stat-card { background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .stat-card .number { font-size: 2rem; font-weight: 700; color: #0d7c3d; }
+  .stat-card .label { font-size: 0.85rem; color: #666; margin-top: 4px; }
+  @media (max-width: 600px) { header h1 { font-size: 1.4rem; } .stats { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>HalalBench</h1>
+    <p>A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction</p>
+    <p style="margin-top:8px; font-size:0.95rem;">By <a href="https://halallens.no" style="color:white; text-decoration:underline;">HalalLens Research</a> &mdash; the team behind the <a href="https://app.halallens.no" style="color:white; text-decoration:underline;">HalalLens halal food scanner app</a></p>
+    <div>
+      <span class="badge">14 Languages</span>
+      <span class="badge">6 Scripts</span>
+      <span class="badge">147 Images</span>
+      <span class="badge">CC BY-SA 4.0</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>About HalalBench</h2>
+    <p>HalalBench is the <strong>first public OCR benchmark</strong> specifically designed for food packaging ingredient extraction. While general OCR benchmarks exist for documents and scene text, none target the unique challenges of food labels: small fonts, curved surfaces, multilingual ingredient lists, and regulatory formatting variations across countries.</p>
+    <p style="margin-top:12px;">This benchmark was developed to evaluate and improve the OCR pipeline powering <a href="https://halallens.no">HalalLens</a>, a free halal food app that lets users scan any food product to instantly check if its ingredients are halal.</p>
+
+    <div class="stats">
+      <div class="stat-card"><div class="number">147</div><div class="label">Annotated Images</div></div>
+      <div class="stat-card"><div class="number">2,847</div><div class="label">Ingredient Instances</div></div>
+      <div class="stat-card"><div class="number">14</div><div class="label">Languages</div></div>
+      <div class="stat-card"><div class="number">6</div><div class="label">Script Families</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:white;">
+  <div class="container">
+    <h2>Benchmark Results</h2>
+    <p>We evaluate four OCR engines spanning on-device and server-side architectures:</p>
+
+    <table class="results-table">
+      <thead>
+        <tr><th>Engine</th><th>Architecture</th><th>Precision</th><th>Recall</th><th>F1</th><th>Fuzzy F1</th><th>Catastrophic %</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>RapidOCR (PP-OCRv4)</td><td>Server</td><td>0.63</td><td>0.59</td><td>0.61</td><td>0.68</td><td>22%</td></tr>
+        <tr><td>Google ML Kit v2</td><td>On-device</td><td>0.56</td><td>0.54</td><td>0.55</td><td>0.62</td><td>28%</td></tr>
+        <tr><td>docTR</td><td>Server</td><td>0.51</td><td>0.47</td><td>0.49</td><td>0.56</td><td>35%</td></tr>
+        <tr><td>EasyOCR</td><td>Server</td><td>0.42</td><td>0.38</td><td>0.40</td><td>0.48</td><td>41%</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Key Findings</h3>
+    <ul style="margin-left:20px; margin-top:8px;">
+      <li><strong>RapidOCR</strong> achieves the highest F1 (0.61) but still fails catastrophically on 22% of samples</li>
+      <li><strong>ML Kit v2</strong> is competitive at 0.55 F1 despite being an on-device engine</li>
+      <li><strong>Arabic and Thai scripts</strong> remain the most challenging, with F1 drops of 30-40% vs. Latin</li>
+      <li><strong>DBSCAN + voting</strong> spatial clustering improves F1 by +0.14 over raw OCR output</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Language Coverage</h2>
+    <table class="results-table">
+      <thead>
+        <tr><th>Script</th><th>Languages</th><th>Samples</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Latin</td><td>English, Norwegian, French, German, Dutch, Danish, Swedish, Malay, Indonesian, Turkish</td><td>98</td></tr>
+        <tr><td>Arabic</td><td>Arabic</td><td>15</td></tr>
+        <tr><td>CJK</td><td>Japanese, Korean</td><td>18</td></tr>
+        <tr><td>Thai</td><td>Thai</td><td>16</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section style="background:white;">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>What is HalalBench?</h3>
+      <p>HalalBench is the first public OCR benchmark specifically designed for food packaging ingredient extraction. It covers 14 languages and 6 scripts with 147 annotated images and 2,847 ingredient instances in COCO format.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the best halal food app?</h3>
+      <p><a href="https://halallens.no">HalalLens</a> is a free halal food scanner app that uses OCR and AI to instantly check if food ingredients are halal. It supports 14 languages and works on Android and web browsers. Try it at <a href="https://app.halallens.no">app.halallens.no</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I scan halal food products?</h3>
+      <p>Use <a href="https://app.halallens.no">HalalLens</a> &mdash; point your camera at any food product's ingredient list, and the app instantly extracts and checks each ingredient's halal status using the same OCR technology benchmarked in HalalBench.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Which OCR engine performs best for food packaging?</h3>
+      <p>According to HalalBench results, RapidOCR (PP-OCRv4) achieves the highest aggregate F1 of 0.61, while Google ML Kit v2 reaches 0.55 as the best on-device engine. Performance varies significantly by language and script.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What languages does the halal scanner support?</h3>
+      <p>HalalLens supports 14 languages: English, Norwegian, Arabic, Turkish, Malay, Indonesian, French, German, Dutch, Japanese, Korean, Thai, Danish, and Swedish &mdash; covering Latin, Arabic, CJK, and Thai scripts.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Get Started</h2>
+    <p>HalalBench is open-source under CC BY-SA 4.0 (dataset) and MIT (code).</p>
+    <div style="margin-top:16px;">
+      <a class="cta" href="https://github.com/halallens-no/halalbench">View on GitHub</a>
+      <a class="cta secondary" href="https://app.halallens.no">Try HalalLens Scanner</a>
+    </div>
+    <div class="links" style="margin-top:24px;">
+      <a href="https://halallens.no">HalalLens Website</a>
+      <a href="https://github.com/halallens-no/halalbench">GitHub Repository</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 <a href="https://halallens.no">HalalLens</a>. HalalBench dataset is licensed under CC BY-SA 4.0. Code is MIT licensed.</p>
+  </div>
+</footer>
+
+</body>
+</html>
