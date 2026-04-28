@@ -116,7 +116,7 @@ Full terms: https://creativecommons.org/licenses/by-sa/4.0/
 ```bibtex
 @article{halalbench2026,
   title     = {HalalBench: A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction},
-  author    = {HalalLens Research},
+  author    = {Nurul Isma},
   journal   = {arXiv preprint arXiv:XXXX.XXXXX},
   year      = {2026}
 }

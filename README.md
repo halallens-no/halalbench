@@ -101,7 +101,7 @@ If you use HalalBench in your research, please cite:
 ```bibtex
 @article{halalbench2026,
   title     = {HalalBench: A Multilingual OCR Benchmark for Food Packaging Ingredient Extraction},
-  author    = {HalalLens Research},
+  author    = {Nurul Isma},
   journal   = {arXiv preprint arXiv:XXXX.XXXXX},
   year      = {2026},
   url       = {https://arxiv.org/abs/XXXX.XXXXX}
@@ -125,5 +125,5 @@ See [LICENSE](LICENSE) for full terms.
 ---
 
 <p align="center">
-  Built by <strong>HalalLens Research</strong> &mdash; <a href="https://halallens.no">https://halallens.no</a>
+  Built by <strong>Nurul Isma</strong> &mdash; <a href="https://halallens.no">HalalLens</a>
 </p>
